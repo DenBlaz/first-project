@@ -7,3 +7,4 @@ gulp.task('html', function() {
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
 });
+
