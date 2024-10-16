@@ -39,3 +39,15 @@ gulp.task('img', function() {
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
 });
+
+//browserSync task
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+
+gulp.task('serve', function() {
+    browserSync.init({
+        server: {
+            baseDir: './dist'
+        }
+    });
+});
