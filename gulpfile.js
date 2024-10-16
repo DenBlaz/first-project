@@ -51,3 +51,14 @@ gulp.task('serve', function() {
         }
     });
 });
+
+//watch task
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+
+gulp.task('watch', function() {
+    gulp.watch('src/*.html', gulp.series('html')).on('change', browserSync.reload);
+    gulp.watch('src/scss/**/*.scss', gulp.series('scss')).on('change', browserSync.reload);
+    gulp.watch('src/js/**/*.js', gulp.series('js')).on('change', browserSync.reload);
+    gulp.watch('src/images/*', gulp.series('img')).on('change', browserSync.reload);
+});
