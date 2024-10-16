@@ -19,3 +19,13 @@ gulp.task('scss', function() {
         .pipe(cleanCSS())
         .pipe(gulp.dest('dist/css'));
 });
+
+//js task
+const gulp = require('gulp');
+const uglify = require('gulp-uglify');
+
+gulp.task('js', function() {
+    return gulp.src('src/js/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'));
+});
