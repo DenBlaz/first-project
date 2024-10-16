@@ -29,3 +29,13 @@ gulp.task('js', function() {
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
+
+//img task
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+
+gulp.task('img', function() {
+    return gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'));
+});
