@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Скидання стилів */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Центрування контейнера на сторінці */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e0e0e0;
+            overflow: auto;
+        }
+
+        /* Головний контейнер */
+        .container {
+            width: 2551px;
+            height: 3579px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        /* Верхній горизонтальний блок */
+        .top-horizontal {
+            width: 2551px;
+            height: 671px;
+            background-color: #2f3137;
+            position: absolute;
+            top: 842px;
+            left: 0;
+        }
+
+        /* Центральний вертикальний блок */
+        .center-vertical {
+            width: 760px;
+            height: 3308px;
+            background-color: #2f3137;
+            position: absolute;
+            top: 135px;
+            left: 1655px;
+        }
+
+        /* Верхній малий блакитний блок */
+        .top-blue {
+            width: 760px;
+            height: 100px;
+            background-color: #1174ae;
+            position: absolute;
+            top: 0;
+            left: 1655px;
+        }
+
+        /* Центральний малий блакитний блок */
+        .center-blue {
+            width: 760px;
+            height: 671px;
+            background-color: #1174ae;
+            position: absolute;
+            top: 842px;
+            left: 1655px;
+        }
+
+        /* Нижній малий блакитний блок */
+        .bottom-blue {
+            width: 760px;
+            height: 100px;
+            background-color: #1174ae;
+            position: absolute;
+            top: 3479px;
+            left: 1655px;
+        }
+        /* Блок в лівому верхньому куті */
+        .top-left-block {
+            width: 500px;
+            height: 600px;
+            background-color: #aaaaaa;
+            border: 20px solid #1174ae;
+            position: absolute;
+            top: 135px;
+            left: 135px;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container">
+    <div class="top-horizontal"></div>
+    <div class="center-vertical"></div>
+    <div class="top-blue"></div>
+    <div class="center-blue"></div>
+    <div class="bottom-blue"></div>
+    <div class="top-left-block"></div>
+</div>
 </body>
 </html>
