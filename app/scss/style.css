@@ -1,0 +1,42 @@
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1174ae;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-content li {
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.skill-bar, .hobby-bar, .language-bar {
+  background-color: #444;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.skill-bar-fill, .hobby-bar-fill, .language-bar-fill {
+  background-color: #1174ae;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
