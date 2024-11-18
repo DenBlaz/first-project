@@ -4,194 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
     <title>Resume</title>
-    <style>
-        /* Скидання стилів */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Центрування контейнера на сторінці */
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #e0e0e0;
-            overflow: auto;
-        }
-
-        /* Головний контейнер */
-        .container {
-            width: 2551px;
-            height: 3579px;
-            background-color: #fff;
-            position: relative;
-        }
-
-        /* Верхній горизонтальний блок */
-        .top-horizontal {
-            width: 2551px;
-            height: 671px;
-            background-color: #2f3137;
-            position: absolute;
-            top: 842px;
-            left: 0;
-        }
-
-        /* Центральний вертикальний блок */
-        .center-vertical {
-            width: 760px;
-            height: 3308px;
-            background-color: #2f3137;
-            position: absolute;
-            top: 135px;
-            left: 1655px;
-        }
-
-        /* Верхній малий блакитний блок */
-        .top-blue {
-            width: 760px;
-            height: 100px;
-            background-color: #1174ae;
-            position: absolute;
-            top: 0;
-            left: 1655px;
-        }
-
-        /* Центральний малий блакитний блок */
-        .center-blue {
-            width: 760px;
-            height: 671px;
-            background-color: #1174ae;
-            position: absolute;
-            top: 842px;
-            left: 1655px;
-        }
-
-        /* Нижній малий блакитний блок */
-        .bottom-blue {
-            width: 760px;
-            height: 100px;
-            background-color: #1174ae;
-            position: absolute;
-            top: 3479px;
-            left: 1655px;
-        }
-        .img{
-            width: 500px;
-            height: 600px;
-            border: 20px solid #1174ae;
-            position: absolute;
-            top: 135px;
-            left: 135px;
-        }
-
-        .h1 {
-            font-size: 120px;
-            line-height: 120px;
-            text-transform: uppercase;
-            color: #2f3137;
-            font-weight: 800;
-            font-family: "Raleway Roman", sans-serif;
-            position: absolute;
-            top: 137px;
-            left: 729px;
-        }
-        .h2 {
-            font-size: 120px;
-            line-height: 120px;
-            text-transform: uppercase;
-            color: #2f3137;
-            font-weight: 100;
-            font-family: "Raleway Roman", sans-serif;
-            position: absolute;
-            top: 250px;
-            left: 729px;
-        }
-        .h3 {
-            font-size: 44px;
-            letter-spacing: 4px;
-            color: #1174ae;
-            font-weight: 300;
-            font-style: italic;
-            font-family: "Raleway Italic", sans-serif;
-            position: absolute;
-            top: 380px;
-            left: 735px;
-        }
-        .h4 {
-            width: 820px;
-            height: 255px;
-            font-size: 40px;
-            letter-spacing: 1px;
-            line-height: 56px;
-            color: #2f3137;
-            font-family: "Raleway Roman", sans-serif;
-            text-align: left;
-            position: absolute;
-            top: 479px;
-            left: 735px;
-        }
-        .BG {
-            width: 70px;
-            height: 70px;
-            background-color: #1174ad;
-            position: absolute;
-            top: 231px;
-            left: 1755px;
-        }
-        .icon_1 {
-            width: 42px;
-            height: 49px;
-            border-radius: 13px;
-            position: absolute;
-            top: 241px;
-            left: 1768px;
-        }
-        .contact {
-            font-size: 60px;
-            text-transform: uppercase;
-            color: #ffffff;
-            font-weight: 800;
-            font-family: "Raleway Roman", sans-serif;
-            position: absolute;
-            top: 221px;
-            left: 1855px;
-        }
-        .underline {
-            width: 22%;
-            height: 2px;
-            background-color: #ffffff;
-            margin-top: 10px;
-            position: absolute;
-            top: 301px;
-            left: 1755px;
-        }
-
-    </style>
 </head>
+
 <body>
+
 <div class="container">
-    <div class="top-horizontal"></div>
-    <div class="center-vertical"></div>
-    <div class="top-blue"></div>
-    <div class="center-blue"></div>
-    <div class="bottom-blue"></div>
-    <div class="top-left-block"></div>
-    <img src="img/img.png" alt="Img" class="img">
-    <div class="h1">HENRY L.</div>
-    <div class="h2">WILLIAMS</div>
-    <div class="h3">Graphic & Web Designer</div>
-    <div class="h4">Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown printer took a galley
-        of type and scrambled it to make a type specimen book.</div>
-    <div class="BG"></div>
-    <img src="img/Icon.png" alt="Icon" class="icon_1">
-    <div class="contact">CONTACT</div>
-    <div class="underline"></div>
+
+    <div class="blocks">
+        <div class="top-horizontal"></div>
+        <div class="center-vertical"></div>
+        <div class="top-blue"></div>
+        <div class="center-blue"></div>
+        <div class="bottom-blue"></div>
+        <div class="top-left-block"></div>
+    </div>
+
+    <div class="head">
+        <div class="image">
+            <img src="img/img.png" alt="Img" class="img">
+        </div>
+        <div class="text">
+            <span class="h1">HENRY L.</span>
+            <span class="h2">WILLIAMS</span>
+            <span class="h3">Graphic & Web Designer</span>
+            <p class="h4">Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+
+    <div class="contact_info">
+        <div class="heading">
+            <div class="BG_1"></div>
+            <img src="img/Icon.png" alt="Icon" class="icon_1">
+            <div class="underline"></div>
+            <span class="contact">CONTACT</span>
+        </div>
+        <div class="phone">
+            <div class="BG_2"></div>
+            <img src="img/Phone.png" alt="Icon" class="icon_2">
+            <p class="pt1">+1-718-310-5588</p>
+            <p class="pt2">+1-313-381-8167</p>
+        </div>
+        <div class="web">
+            <div class="BG_3"></div>
+            <img src="img/Web.png" alt="Icon" class="icon_3">
+            <p class="pt3">www.yourwebsite.com</p>
+            <p class="pt4">yourinfo@email.com</p>
+        </div>
+        <div class="location">
+            <div class="BG_4"></div>
+            <img src="img/Location.png" alt="Icon" class="icon_4">
+            <p class="pt5">769 Prudence Street</p>
+            <p class="pt6">Lincoln Park, MI 48146</p>
+        </div>
+        <div class="line"></div>
+    </div>
 </div>
 </body>
 </html>
